@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@2.5,100&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -13,6 +15,7 @@ code {
 }
 * {
   box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
 }
 .home {
   display: flex;
@@ -37,7 +40,7 @@ code {
 .redirect {
   text-decoration: none;
   font-size: 1.8rem;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid rgb(214, 0, 0);
   color: black;
 }
 .notification {
@@ -65,7 +68,7 @@ code {
   grid-template-columns: 4fr 1fr;
   padding: 0;
   margin: 0;
-  background-color: rgb(119, 119, 119);
+  background-color: rgb(250, 85, 35);
 }
 .navbar1 {
   display: grid;
@@ -112,7 +115,7 @@ input {
   padding: 10px;
   font-size: 1.8rem;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid rgb(240, 0, 0);
 }
 input:focus {
   outline: none;
@@ -123,13 +126,13 @@ input:focus {
   font-size: 2rem;
   height: 20vh;
   width: 100%;
-  border: 2px solid gray;
+  border: 2px solid rgb(201, 0, 0);
 }
 .btn {
   background-color: white;
   padding: 10px;
   font-size: 1.3rem;
-  border: 1px solid gray;
+  border: 2px solid rgb(212, 0, 0);
   border-radius: 5px;
   cursor: pointer;
   color: black;
@@ -139,7 +142,7 @@ input:focus {
   border: none;
 }
 .usr {
-  background-color: rgb(252, 29, 0);
+  background-color: rgb(255, 0, 0);
   padding: 10px 18px 10px 18px;
   border-radius: 50%;
   text-align: center;
@@ -150,7 +153,7 @@ input:focus {
   background-color: rgb(253, 0, 55);
 }
 .btn:hover {
-  background-color: gray;
+  background-color: rgb(253, 0, 55);
   color: white;
 }
 
@@ -231,7 +234,6 @@ input:-webkit-autofill {
     grid-template-columns: 1fr 1fr;
     padding: 0;
     margin: 0;
-    background-color: rgb(119, 119, 119);
   }
 }
 @media only screen and (max-width: 786px) {
@@ -247,6 +249,7 @@ input:-webkit-autofill {
     margin: 10px;
   }
   input {
+    width: 100%;
     font-size: 1.3rem;
   }
   .text_area {
@@ -258,7 +261,6 @@ input:-webkit-autofill {
 }
 @media only screen and (max-width: 566px) {
   input {
-    width: 90%;
     font-size: 1.1rem;
   }
   .navbar {
@@ -266,6 +268,9 @@ input:-webkit-autofill {
   }
   .links {
     margin: 10px;
+  }
+  .text_area {
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 508px) {
@@ -284,6 +289,9 @@ input:-webkit-autofill {
   .noti1 h3 {
     font-size: 0.9rem;
   }
+  .input {
+    width: 100%;
+  }
   h1 {
     font-size: 1.3rem;
   }
@@ -291,12 +299,18 @@ input:-webkit-autofill {
     font-size: 0.9rem;
   }
   .text_area {
-    width: 90%;
+    width: 100%;
   }
   .redirect {
     font-size: 0.9rem;
   }
 }
+@media only screen and (max-width: 303px) {
+  .links {
+    margin: 10px 5px 10px 5px;
+  }
+}
+
 @media only screen and (max-width: 280px) {
   .links {
     margin: 10px 5px 10px 5px;
