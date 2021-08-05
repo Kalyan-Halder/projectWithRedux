@@ -194,6 +194,7 @@ input:focus {
   color: white;
 }
 .input_inner {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,6 +312,22 @@ input:-webkit-autofill {
 @media only screen and (max-width: 303px) {
   .links {
     margin: 10px 5px 10px 5px;
+    font-size: 0.7rem;
+  }
+  .greet h1 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .show_project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+  }
+  .redirect,
+  .btn {
+    font-size: 0.5rem;
+  }
+  .projectlist {
+    margin: 5px;
   }
 }
 

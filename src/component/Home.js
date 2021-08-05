@@ -23,7 +23,7 @@ function Home(props) {
         <div className="home">
              <div className="greet">
              <h1>Welcome to Project Creator</h1>
-            <p>By Kalyan with care</p>
+             <p>By Kalyan with care</p>
              </div>
             {auth===true || auth.state === true ?
             <NavLink className="redirect" to="/create">Create your First Project</NavLink>:
@@ -34,8 +34,10 @@ function Home(props) {
          </>
         :
         <div className="home">
-            <h1>Welcome to Project Creator</h1>
-            <p>By Kalyan with care</p>
+             <div className="greet">
+             <h1>Welcome to Project Creator</h1>
+             <p>By Kalyan with care</p>
+             </div>
             {auth===true || auth.state === true ?
             <NavLink className="redirect" to="/create">Create your First Project</NavLink>:
             <NavLink className="redirect btn" to="/login">Login Now</NavLink>      
