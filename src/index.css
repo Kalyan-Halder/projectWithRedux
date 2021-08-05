@@ -63,6 +63,10 @@ code {
   justify-content: center;
   align-items: center;
 }
+.title {
+  color: rgb(250, 85, 35);
+  text-align: center;
+}
 .navbar {
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -282,6 +286,10 @@ input:-webkit-autofill {
   .show_project {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  }
+  .projectlist {
+    margin: 20px;
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 426px) {

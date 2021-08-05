@@ -13,7 +13,7 @@ function Notification(props) {
             {project.map((project,index)=>{
                 return(
                     <div className="noti1"> 
-                       <h3 key={index}>Project Created With a title {project.title}</h3>
+                       <h3 key={index}>Project Created With a title <span className="title">"{project.title}"</span></h3>
                        <NavLink className="redirect btn" to={'/projects/' + project.title} >View</NavLink>
                     </div>
                 )
