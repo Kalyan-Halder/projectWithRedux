@@ -17,7 +17,7 @@ function ProjectList(props) {
              <div className="list">      
                     <h1>{project.name}</h1>
                     <h3>{project.title}</h3>
-                    <button className="btn" onClick={delate}>Delate</button>
+                    <button className="btn" onClick={delate}>Delete</button>
                     <NavLink className="redirect btn" to={'/projects/' + project.title} >View</NavLink>
 
              </div>

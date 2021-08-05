@@ -31,7 +31,7 @@ function ProjectSummary(props) {
                     <h1>{specificProject.name}</h1>
                     <h3>{specificProject.title}</h3>
                     <p>{specificProject.description}</p>
-                    <button className="btn" onClick={delate}>Delate</button>
+                    <button className="btn" onClick={delate}>Delete</button>
                     <button className="btn" onClick={()=>history.push('/projects')}>Back</button>
              </div>
            </div>
